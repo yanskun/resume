@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "max-ten": {
+      "max": 3
+    },
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": true
+  }
+}
