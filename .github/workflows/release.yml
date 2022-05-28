@@ -1,0 +1,34 @@
+name: Relase
+
+on:
+  release:
+    types: [published]
+  push:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    name: build pdf and release
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Set Node
+        run: npm install
+
+      - name: Build PDF
+        run: npm run build
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
