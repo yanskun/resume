@@ -8,6 +8,19 @@
         "space": "always"
       }
     },
-    "preset-ja-technical-writing": true
+    "preset-ja-technical-writing": true,
+    "no-mix-dearu-desumasu": {
+      "preferInHeader": "",
+      "preferInBody": "である",
+      "preferInList": "である"
+    }
+  },
+  "filters": {
+    "allowlist": {
+      "allow": [
+        "24時間",
+        "365日"
+      ]
+    }
   }
 }
