@@ -18,6 +18,7 @@
   "filters": {
     "allowlist": {
       "allow": [
+        "WED",
         "24時間",
         "365日",
         "1度",
