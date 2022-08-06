@@ -2,7 +2,10 @@ name: Gen Issue
 
 on:
   schedule:
-    - cron: '0 0 1 */3 *'
+    - cron: '0 0 1 FEB *'
+    - cron: '0 0 1 MAY *'
+    - cron: '0 0 1 AUG *'
+    - cron: '0 0 1 NOV *'
 
 jobs:
   build:
