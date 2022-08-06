@@ -16,10 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Today's date
+        run: echo "TODAY=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
+
       - uses: imjohnbo/issue-bot@v3
         with:
           assignees: "yasudanaoya"
-          title: 職務経歴書を更新しましょう {{ date | date('YYYY/MM/DD') }}
+          title: 職務経歴書を更新しましょう ${{ env.TODAY }}
           body: |-
             - [ ] docs/README.md の更新
         env:
