@@ -20,7 +20,7 @@ jobs:
         with:
           assignees: "yasudanaoya"
           title: 職務経歴書を更新しましょう {{ date | date('YYYY/MM/DD') }}
-          body: |
+          body: |-
             - [ ] docs/README.md の更新
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
