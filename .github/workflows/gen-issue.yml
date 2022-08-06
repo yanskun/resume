@@ -6,6 +6,7 @@ on:
     - cron: '0 0 1 MAY *'
     - cron: '0 0 1 AUG *'
     - cron: '0 0 1 NOV *'
+  workflow_dispatch:
 
 jobs:
   build:
