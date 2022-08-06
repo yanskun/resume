@@ -19,12 +19,12 @@ jobs:
       - name: Today's date
         run: echo "TODAY=$(date '+%Y-%m-%d')" >> $GITHUB_ENV
 
-      - uses: imjohnbo/issue-bot@v3
+      - name: issue-bot
+        uses: imjohnbo/issue-bot@v3
         with:
           assignees: "yasudanaoya"
           title: 職務経歴書を更新しましょう ${{ env.TODAY }}
-          body: |-
-            - [ ] docs/README.md の更新
+          body: "[ ] docs/README.md の更新"
 
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
