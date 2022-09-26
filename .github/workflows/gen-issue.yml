@@ -22,7 +22,7 @@ jobs:
       - name: issue-bot
         uses: imjohnbo/issue-bot@v3
         with:
-          assignees: "yasudanaoya"
+          assignees: "yanskun"
           title: 職務経歴書を更新しましょう ${{ env.TODAY }}
           body: |-
             - [ ] docs/README.md の更新
