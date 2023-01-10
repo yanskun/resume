@@ -65,7 +65,7 @@ key|value
 key|value
 ---|---
 期間|2020/12 ~ 現在
-規模|4 -> 1-> 2人
+規模|4 -> 1 -> 2人
 役割|Lead
 内容|商業施設向け売上管理システム<br>フロント/サーバーの開発
 技術|React<br>TypeScript<br>Material UI<br>Go<br>Echo
